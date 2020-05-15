@@ -1,0 +1,40 @@
+//----------------------------------
+//
+//	SIMPLE SLIDER
+//
+//----------------------------------
+
+.simple-slider {
+	.swiper-slide {
+		height: $swiper-slide-height;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		
+		@media (max-width:767px) {
+			height: $swiper-slide-height-mobile;
+		}
+	}
+	
+	// prev / next arrows
+	.swiper-button-next, 
+	.swiper-button-prev {
+		width: 50px;
+		margin-left: 20px;
+		margin-right: 20px;
+				
+		@media (max-width:767px) {
+			display: none;
+		}
+	}
+	
+	// bullet normal
+	.swiper-pagination-bullet {
+	    background: $swiper-pagination-bullet-color;
+	}
+	
+	// bullet active
+	.swiper-pagination-bullet-active {
+		background: $swiper-pagination-bullet-active-color;
+	}
+}

@@ -1,0 +1,22 @@
+//----------------------------------
+//
+//	CONTACT Section / Form
+//
+//----------------------------------
+
+.section-contact {
+	 .form-group {
+		 margin: 0 40px;
+	 }
+	 
+	 iframe.wufoo-form-container {
+		 .redesigned-theme-2018 {
+			 .wufoo {
+				 display: none;
+			 }
+			 header.info {
+				 display: none; // hides the form titles
+			 }
+		 }
+	 }
+}

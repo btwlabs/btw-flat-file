@@ -1,0 +1,337 @@
+//--------------------------------------------------
+//--------------------------------------------------
+//
+//	Variables 
+//
+//--------------------------------------------------
+//--------------------------------------------------
+
+
+//----------------------------------------------------------------
+//
+// Grid breakpoints
+//
+//----------------------------------------------------------------
+
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+//-------------------------------------
+//
+// Color system - Reference
+//
+//-------------------------------------
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+
+//-------------------------------------
+// Primary color
+//-------------------------------------
+
+$primary:       #0062cc !default;  // med blue
+$secondary:     #97262c !default;  // dark red
+$tertiary: 		#6D6E71 !default;  // gray
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+
+
+
+//-------------------------------------
+// TYPOGRAPHY
+//-------------------------------------
+
+
+// Base font
+
+$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-weight: 400;
+$base-font-size: 18px;
+$base-line-height: 1.6;
+$base-letter-spacing: 0;
+
+// Base text color
+$text-color: rgba(0,0,0,0.8);
+$link-color: $primary;
+
+$text-on-dark-color: #ddd;
+$text-on-light-color: rgba(0,0,0,0.8);
+
+
+
+// Headings • Titles
+
+$title-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$title-font-weight: 900;
+$title-margin: 0 0 1em 0;
+$title-line-height: 1.2;
+$title-letter-spacing: 0em;
+$title-text-transform: none;
+
+// Headings • Title colors
+$title-color: $text-color;
+$title-on-dark-color: #fff;
+$title-on-light-color: $title-color;
+
+
+
+// Navigation 
+
+$nav-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$nav-font-weight: 400;
+$nav-line-height: 1;
+
+
+
+//---------------------------------------
+//	BODY - Settings for the `<body>` element.
+//---------------------------------------
+
+$body-bg:         $white !default;
+$body-color:      $gray-900 !default;
+
+
+
+//-------------------------------------
+// NAVIGATION
+//-------------------------------------
+
+// top navbar
+$navbar-bg-color: $dark;
+
+
+
+//-------------------------------------
+// PAGE SECTIONS
+//-------------------------------------
+
+$section-alternating-bg: $gray-200;
+
+
+
+//-------------------------------------
+// BORDERS
+//-------------------------------------
+
+$border-color: #ccc;
+
+
+
+//-------------------------------------
+// BUTTONS
+//-------------------------------------
+
+$button-bg-color: $primary;
+$button-text-color: $white;
+$button-border-color: $primary;
+
+$button-hover-bg-color: $white;
+$button-hover-text-color: $primary;
+$button-hover-border-color: $primary;
+
+
+
+//-------------------------------------
+// HERO SECTION
+//-------------------------------------
+
+$hero-overlay-color: rgba(0,0,0,0.6);
+
+$hero-background-image: url("https://picsum.photos/1800/900?random=10");
+
+
+//-------------------------------------
+// SLIDESHOW - SWIPER
+//-------------------------------------
+
+// section bg color
+$section-slides-bg-color: transparent;
+
+// slide height
+$swiper-slide-height: 500px;
+$swiper-slide-height-mobile: 360px;
+
+// bullets
+$swiper-pagination-bullet-color: $white;
+$swiper-pagination-bullet-active-color: $white;
+
+// to change arrow color to either 
+// black or white, add
+
+
+
+//-------------------------------------
+// SERVICES (cards with image)
+//-------------------------------------
+
+$section-services-bg-color: $section-alternating-bg;
+
+
+
+//-------------------------------------
+// FEATURES (cards with icon)
+//-------------------------------------
+
+$section-features-bg-color: $section-alternating-bg;
+
+
+
+//-------------------------------------
+// PARALLAX IMG BG
+//-------------------------------------
+
+$section-parallax-bg-color: transparent;
+
+
+
+//-------------------------------------
+// STORY BLOCKS
+//-------------------------------------
+
+$overlay-bg-color-on-dark: rgba(0,0,0,0.7);
+$overlay-bg-color-on-light: rgba(255,255,255,0.7);
+
+// Values will be converted to RGBa 
+$overlay-gradient-base-color-dark: #1F1F1F;
+$overlay-gradient-base-color-light: #fff;
+
+
+
+//-------------------------------------
+// CONTACT
+//-------------------------------------
+
+$section-contact-bg-color: transparent;
+
+
+
+//-------------------------------------
+// INSTAGRAM
+//-------------------------------------
+
+$section-instagram-bg-color: transparent;
+
+
+
+//-------------------------------------
+// TWITTER
+//-------------------------------------
+
+$section-twitter-bg-color: transparent;
+$twitter-feed-max-width: 800px;
+
+
+
+//-------------------------------------
+// FACEBOOK
+//-------------------------------------
+
+$section-fb-bg-color: $section-alternating-bg;
+$fb-feed-max-width: 800px;
+
+
+
+//-------------------------------------
+// BANDS IN TOWN (tour/events)
+//-------------------------------------
+
+$section-bit-bg-color: $gray-900;
+$bit-feed-max-width: 800px;
+
+
+
+//-------------------------------------
+// SOCIAL ICONS
+//-------------------------------------
+
+$section-social-links-bg-color: $section-alternating-bg;
+
+$social-icon-color: $primary;
+$social-icon-border-color: $primary;
+$social-icon-bg-color: transparent;
+
+
+
+//-------------------------------------
+// SUBSCRIBE - email signup section
+//-------------------------------------
+
+$section-subscribe-bg-color: #fff;
+
+
+
+//-------------------------------------
+// MAP section
+//-------------------------------------
+
+$map-height: 400px;
+$section-map-bg-color: $gray-600;
+
+
+
+//-------------------------------------
+// FOOTER
+//-------------------------------------
+
+// footer dark
+$footer-dark-bg-color: $gray-900;
+
+$footer-dark-title-color: $white;
+$footer-dark-text-color: #ccc;
+
+$footer-dark-link-color: #ccc;
+$footer-dark-link-hover-color: $white;
+
+
+// footer light
+$footer-light-bg-color: $white;
+
+$footer-light-title-color: $text-color;
+$footer-light-text-color: $white;
+
+$footer-light-link-color: $white;
+$footer-light-link-hover-color: $white;
+
+// back to top button
+$back-to-top-bg-color: $primary;
+$back-to-top-icon-color: $white;
+

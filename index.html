@@ -4,174 +4,777 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>WhiteLabel-static</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>BTW Flat File Starter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
-    <link rel="stylesheet" href="assets/css/Features-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/Social-Icons.css">
-    <link rel="stylesheet" href="assets/css/Team-Clean.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean">
-        <div class="container-fluid"><a class="navbar-brand" href="#top"><img src="assets/img/s&s_logo.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#first-item">First Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#second-item">Second Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Third Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#fourth-item">Fourth Item</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <div class="jumbotron jumbotron-fluid text-center d-flex flex-column justify-content-center flex-wrap" id="top" style="padding: 8vw;"><div class="hero-overlay"></div>
-        <div class="jumbotron-content-wrapper">
-            <div class="hero-title-wrapper">
-                <h1 class="page-title">Heading text</h1>
-                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                <p><a class="btn btn-primary" role="button">Learn more</a></p>
+	<!-- Start: FB script -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+	<!-- End: FB script -->
+    <header>
+        <!-- Start: Navigation Clean -->
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navigation-clean">
+            <div class="container-fluid">
+	            <a class="navbar-brand" href="#top"><img src="img/logo-btw-full-dark.svg"></a>
+	            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#instagram">Instagram</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#twitter">Twitter</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#location">Location</a></li>
+                    </ul>
             </div>
-            <div class="d-flex justify-content-center hero-contact-wrapper">
-                <div class="d-flex flex-grow-0 flex-shrink-0 hero-address">
-                    <div class="d-flex justify-content-center align-items-center contact-icon"><i class="fa fa-map-marker" style="font-size: 40px;"></i></div>
-                    <div class="details">
-                        <p>441 Nashville Pike<br>Gallatin, TN 37066<br></p>
-                    </div>
+            </div>
+        </nav>
+        <!-- End: Navigation Clean -->
+    </header>
+    
+    
+    
+    <!-- Start: Hero Section -->
+    <section id="hero" class="section-hero">
+        <div class="jumbotron jumbotron-fluid text-center d-flex flex-column justify-content-center flex-wrap" id="top">
+	        <!-- Start: Parallax Background -->
+		    <div data-bs-parallax-bg="true" class="parallax-item" style="height:100vh; width: 100%; z-index: 0; background-image:url(https://unsplash.it/1800/900?image=1051); background-position:center; background-size:cover;"></div>
+		    <!-- End: Parallax Background -->
+	        <div class="hero-overlay"></div>
+        
+            
+            <div class="d-flex flex-column align-items-center jumbotron-content-wrapper">
+	            
+                <div class="hero-logo-wrapper"><img src="img/logo-btw-full-dark.svg"></div>
+                
+                <div class="hero-title-wrapper">
+                    <h1 class="page-title hero-heading">Heading text</h1>
+                    <h3 class="hero-subheading">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h3>
+                    <p><a class="btn btn-primary" role="button">Learn more</a></p>
                 </div>
-                <div class="d-flex flex-grow-0 flex-shrink-0 hero-contact">
-                    <div class="d-flex justify-content-center align-items-center contact-icon"><i class="fa fa-mobile" style="font-size: 40px;"></i></div>
-                    <div class="details">
+                
+                <div class="d-flex justify-content-center hero-contact-wrapper">
+	                
+                    <!-- Start: Hero Address -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 hero-address">
+                        <div class="d-flex justify-content-center align-items-center contact-icon"><i class="fa fa-map-marker" style="font-size: 40px;"></i></div>
                         <div class="details">
-                            <p>p: 615.452.4363<br>f: 615.451.1465<br></p>
+                            <p>111 Street Address<br>City, State Zip<br></p>
                         </div>
                     </div>
+                    <!-- End: Hero Address -->
+                    
+                    <!-- Start: Hero Contact -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 hero-contact">
+                        <div class="d-flex justify-content-center align-items-center contact-icon"><i class="fa fa-mobile" style="font-size: 40px;"></i></div>
+                        <div class="details">
+                            <div class="details">
+                                <p>p: 555.555.5555<br>f: 444.444.4444<br></p>
+                            </div>
+                        </div>
+                    </div><!-- End: Hero Contact -->
+                    
                 </div>
-            </div>
+            </div><!-- End: Jumbotron Content Wrapper -->
+            
+            <!-- Start: Arrow Icon -->
+            <div class="scroll-link"><a href="#about"><i class="fas fa-chevron-down" style="color: rgb(255,255,255);"></i></a></div>
+            <!-- End: Arrow Icon -->
+            
         </div>
+    </section>
+    <!-- End: BHero Section -->
+    
+    
+    
+    <!-- End: Alert Section -->
+    <section id="alert-message" class="section section-alert">
+		<div class="alert alert-primary alert-dismissible fade show" role="alert">
+			<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+    </section>
+    <!-- End: Alert Section -->
+    
+    
+    
+    <!-- Start: Modal -->
+    <div class="modal-button-wrapper text-center">
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter">
+		  Launch demo modal
+		</button>
     </div>
-    <div class="highlight-clean">
+	
+	<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="eModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ModalCenterTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					blah blah blah
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Modal -->
+	
+	
+    
+    <!-- Start: Intro Section -->
+    <section id="about" class="section section-about">
         <div class="container">
+	        
+            <!-- Start: Intro -->
             <div class="intro">
                 <h2 class="text-center section-title">Introduction</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis.</p>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a><button class="btn btn-light" type="button">Secondary</button></div>
+            <!-- End: Intro -->
+            
+            <!-- Start: Buttons -->
+            <div class="button-wrapper text-center"><button class="btn btn-primary" type="button">Button</button></div>
+            <!-- End: Buttons -->
         </div>
-    </div>
-    <div class="team-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center section-title">Features with Photos</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/1.jpg">
-                    <h3 class="name">Ben Johnson</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/2.jpg">
-                    <h3 class="name">Emily Clark</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="assets/img/3.jpg">
-                    <h3 class="name">Carl Kent</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="features-boxed" style="background-color: rgb(255,255,255);">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center section-title">Features with icons</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-            </div>
-            <div class="row justify-content-center features">
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name">Works everywhere</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-clock-o icon"></i>
-                        <h3 class="name">Always available</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-list-alt icon"></i>
-                        <h3 class="name">Customizable </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="features-clean"></div>
-    <div class="simple-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578527830630-9c2dc15d55a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2702&amp;q=80);"></div>
-                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578165219176-ece04edbd053?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80);"></div>
-                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1573743338941-39db12ef9b64?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80);"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    <section class="instagram-container">
-        <h2 class="text-center section-title">Instagram Feed</h2>
-        <h2 class="block__title">Follow <a href="https://www.instagram.com/hossburgers/" target="_blank">@hossburgers</a> On Instagram</h2>
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/fe9f312d8f315f1f8b0e697e7c43d137.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-        
     </section>
-    <section id="contact" class="contact" style="padding: 5vw 8vw;">
+    <!-- End: Intro -->
+    
+    
+    
+    <!-- Start: Services / Features with Image -->
+    <section id="services" class="section section-services features features-img">
+        <div class="container-fluid">
+            <!-- Start: Intro -->
+            <div class="intro mb-5">
+                <h2 class="text-center section-title">Services</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <!-- End: Intro -->
+            <!-- Start: Card Group -->
+            <div class="row">
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+			                <img class="" src="https://unsplash.it/1000/650?random=8">
+		                </div>
+		                <div class="card-body">
+	                    	<h3 class="card-title text-center">This is a title to replace</h3>
+							<p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+							<a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+		                	<img class="" src="https://unsplash.it/1000/650?random=9">
+		                </div>
+		                <div class="card-body">
+		                    <h3 class="card-title text-center">This is a title to replace</h3>
+		                    <p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+		                    <a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+		                	<img class="" src="https://unsplash.it/1000/650?random=10">
+		                </div>
+		                <div class="card-body">
+		                    <h3 class="card-title text-center">This is a title to replace</h3>
+		                    <p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+		                    <a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+			                <img class="" src="https://unsplash.it/1000/650?random=11">
+		                </div>
+		                <div class="card-body">
+	                    	<h3 class="card-title text-center">This is a title to replace</h3>
+							<p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+							<a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+		                	<img class="" src="https://unsplash.it/1000/650?random=12">
+		                </div>
+		                <div class="card-body">
+		                    <h3 class="card-title text-center">This is a title to replace</h3>
+		                    <p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+		                    <a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 item">
+	                <div class="card">
+		                <div class="card-image">
+		                	<img class="" src="https://unsplash.it/1000/650?random=13">
+		                </div>
+		                <div class="card-body">
+		                    <h3 class="card-title text-center">This is a title to replace</h3>
+		                    <p class="card-text">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+		                    <a class="btn btn-primary btn-block" href="#">Learn More</a>
+		                </div>
+	                </div>
+                </div>
+            </div>
+            <!-- End: Cards -->
+        </div>
+    </section>
+    <!-- Start: Services / Features with Image -->
+    
+    
+    
+    <!-- Start: Parallax Image -->
+    <section id="parallax-bg" class="section section-parallax-img">
+	    <!-- Start: Parallax Background -->
+	    <div data-bs-parallax-bg="true" class="parallax-item" style="height:600px; background-image:url(https://unsplash.it/1800/900?image=1051); background-position:center; background-size:cover;"></div>
+	    <!-- End: Parallax Background -->
+    </section>
+    <!-- End: Parallax Image -->
+    
+    
+    
+    <!-- Start: Features with Icons -->
+    <section id="features" class="section section-features features features-icon">
+	    
+	    <div class="features-boxed">
+	        <div class="container">
+		        
+	            <!-- Start: Intro -->
+	            <div class="intro">
+	                <h2 class="text-center section-title">Features</h2>
+	                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+	            </div>
+	            <!-- End: Intro -->
+	            
+	            <!-- Start: Features -->
+	            <div class="row justify-content-center features">
+	                <div class="col-sm-6 col-md-5 col-lg-4 item">
+	                    <div class="box"><i class="fa fa-map-marker icon"></i>
+	                        <h3 class="title">Works everywhere</h3>
+	                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
+	                </div>
+	                <div class="col-sm-6 col-md-5 col-lg-4 item">
+	                    <div class="box"><i class="fa fa-clock-o icon"></i>
+	                        <h3 class="title">Always available</h3>
+	                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
+	                </div>
+	                <div class="col-sm-6 col-md-5 col-lg-4 item">
+	                    <div class="box"><i class="fa fa-list-alt icon"></i>
+	                        <h3 class="title">Customizable </h3>
+	                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a class="learn-more" href="#">Learn more »</a></div>
+	                </div>
+	            </div>
+	            <!-- End: Features -->
+	        </div>
+	    </div>
+    </section>
+    <!-- End: Features with Icons -->
+    
+    
+    
+    <!-- Start: Twitter section -->
+    <section id="twitter" class="section section-twitter">
+	    <div class="feed-wrapper">
+	        <h2 class="text-center section-title">Twitter</h2>
+	        <!--<h4 class="text-center">Follow <a href="https://www.twitter.com/hossburgers/" target="_blank">@bythewaylabs</a> On Twitter</h4>-->
+	        <a class="twitter-timeline" data-height="700" href="https://twitter.com/bythewaylabs?ref_src=twsrc%5Etfw">Tweets by bythewaylabs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	        <a href="https://twitter.com/bythewaylabs?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bythewaylabs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+    </section>
+    <!-- End: Twitter section -->
+    
+    
+	<!-- Start: Facebook section -->
+    <section id="facebook" class="section section-facebook">
+	    <div class="feed-wrapper">
+	        <h2 class="text-center section-title">Facebook</h2>
+	        
+	        <!-- Start: fb page embed code -->
+
+			<div class="fb-page" data-href="https://www.facebook.com/bythewaylabs" data-tabs="timeline, events" data-width="500" data-height="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/bythewaylabs" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bythewaylabs">By The Way Labs, LLC</a></blockquote></div>			
+			
+			<!-- End: fb page embed code -->
+
+		</div>
+    </section>
+    <!-- End: Facebook section --> 
+    
+
+
+	<!-- Start: Bands In Town section -->
+    <section id="tour" class="section section-bands-in-town dark">
+	    <div class="feed-wrapper">
+	        <h2 class="text-center section-title">Tour Dates</h2>
+	        
+	        <!-- Start: bands-in-town embed code -->
+
+			<script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+			<a class="bit-widget-initializer" data-artist-name="Dream Theater" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#e17248" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#ffffff" data-display-lineup="true" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>			
+			
+			<!-- End: bands-in-town embed code -->
+
+		</div>
+    </section>
+    <!-- End: Bands In Town section --> 
+
+
+
+
+
+    
+    <!-- Start: Gallery / Simple Slider -->
+    <section id="gallery" class="section section-slides">
+	    <h2 class="text-center section-title">Photos</h2>
+	    <div class="simple-slider">
+	        <!-- Start: Slideshow -->
+	        <div class="swiper-container">
+	            <!-- Start: Slide Wrapper -->
+	            <div class="swiper-wrapper">
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578527830630-9c2dc15d55a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2702&amp;q=80);"></div>
+	                <!-- End: Slide -->
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578165219176-ece04edbd053?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80);"></div>
+	                <!-- End: Slide -->
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1573743338941-39db12ef9b64?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80);"></div>
+	                <!-- End: Slide -->
+	            </div>
+	            <!-- End: Slide Wrapper -->
+	            <!-- Start: Pagination -->
+	            <div class="swiper-pagination"></div>
+	            <!-- End: Pagination -->
+	            <!-- Start: Previous -->
+	            <div class="swiper-button-prev swiper-button-white"></div>
+	            <!-- End: Previous -->
+	            <!-- Start: Next -->
+	            <div class="swiper-button-next swiper-button-white"></div>
+	            <!-- End: Next -->
+	        </div>
+	        <!-- End: Slideshow -->
+	    </div>
+    </section>
+    <!-- End: Gallery / Simple Slider -->
+    
+    
+        <!-- Start: Slideshow / Simple Slider with Text-->
+    <section id="testimonials" class="section section-slides-text">
+	    <h2 class="text-center section-title">Slides With Text</h2>
+	    <div class="simple-slider">
+	        <!-- Start: Slideshow -->
+	        <div class="swiper-container">
+	            <!-- Start: Slide Wrapper -->
+	            <div class="swiper-wrapper">
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578527830630-9c2dc15d55a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2702&amp;q=80);">
+		                <div class="overlay"></div>
+		                <div class="slide-content">
+			                <h3 class="slide-title">This is a title that could be used to say something about anything</h3>
+			                <div class="slide-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mauris pharetra et ultrices neque.</div>
+			                <div class="button-wrapper">
+				                <a class="btn btn-primary">Learn More</a>
+			                </div>
+		                </div>
+	                </div>
+	                <!-- End: Slide -->
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1578165219176-ece04edbd053?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80);">
+		                <div class="overlay"></div>
+		                <div class="slide-content">
+			                <h3 class="slide-title">This is a title that could be used to say something about anything</h3>
+			                <div class="slide-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mauris pharetra et ultrices neque.</div>
+			                <div class="button-wrapper">
+				                <a class="btn btn-primary">Learn More</a>
+			                </div>
+		                </div>
+	                </div>
+	                <!-- End: Slide -->
+	                <!-- Start: Slide -->
+	                <div class="swiper-slide" style="background-image: url(https://images.unsplash.com/photo-1573743338941-39db12ef9b64?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80);">
+		                <div class="overlay"></div>
+		                <div class="slide-content">
+			                <h3 class="slide-title">This is a title that could be used to say something about anything</h3>
+			                <div class="slide-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mauris pharetra et ultrices neque.</div>
+			                <div class="button-wrapper">
+				                <a class="btn btn-primary">Learn More</a>
+			                </div>
+		                </div>
+	                </div>
+	                <!-- End: Slide -->
+	            </div>
+	            <!-- End: Slide Wrapper -->
+	            <!-- Start: Pagination -->
+	            <div class="swiper-pagination"></div>
+	            <!-- End: Pagination -->
+	            <!-- Start: Previous -->
+	            <div class="swiper-button-prev swiper-button-white"></div>
+	            <!-- End: Previous -->
+	            <!-- Start: Next -->
+	            <div class="swiper-button-next swiper-button-white"></div>
+	            <!-- End: Next -->
+	        </div>
+	        <!-- End: Slideshow -->
+	    </div>
+    </section>
+    <!-- End: Gallery / Simple Slider -->
+
+    
+    
+    
+    <!-- Start: Story Block LEFT TEXT Full Bg Img -->
+    <section id="story1" class="section section-story-block">
+    	<!-- Start: Parallax Background -->
+	    <div data-bs-parallax-bg="true" class="parallax-item d-none d-md-block" style="min-height:600px; background-image:url(https://picsum.photos/1800/900?random=1); background-position:center; background-size:cover;"></div>
+	    <!-- End: Parallax Background -->
+	    <div class="story-block dark-bg right-text-full-bg-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner" >
+				<div class="group-left">
+					<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=1" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					<div class="story-block-image">	</div>
+				</div>
+				<div class="group-right">
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    <!-- End: Story Block LEFT TEXT Full Bg Img -->
+    
+    
+    
+    <!-- Start: Story Block RIGHT TEXT Full Bg Img -->
+    <section id="story2" class="section section-story-block">
+    	<!-- Start: Parallax Background -->
+	    <div data-bs-parallax-bg="true" class="parallax-item d-none d-md-block" style="min-height:600px; background-image:url(https://picsum.photos/1800/900?random=2); background-position:center; background-size:cover;"></div>
+	    <!-- End: Parallax Background -->
+	    <div class="story-block dark-bg left-text-full-bg-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner" >
+				<div class="group-left">
+					<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=2" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+					
+				</div>
+				<div class="group-right">
+					<div class="story-block-image">	</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    <!-- Start: Story Block RIGHT TEXT Full Bg Img -->
+    
+    
+    
+    <!-- Start: Story Block CENTER TEXT Full Bg Img -->
+    <section id="story3" class="section section-story-block">
+    	<!-- Start: Parallax Background -->
+	    <div data-bs-parallax-bg="true" class="parallax-item d-none d-md-block" style="min-height:600px; background-image:url(https://picsum.photos/1800/900?random=3); background-position:center; background-size:cover;"></div>
+	    <!-- End: Parallax Background -->
+	    <div class="story-block dark-bg center-text-full-bg-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner" >
+				<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=3" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+				<h2 class="title">Operational Approach</h2>
+				<div class="story-block-text">
+					<p>Our primary operational goal at TVV Capital is “Do No Harm.” We recognize that your team — your people — are your most important asset. They’re integral to the success of the business you’ve built, and you care about them. We do too. So unlike investors who aggressively target staffing reductions or changes to employee benefits, we work alongside your team to co-create a plan. <strong>Our priority is learning how best to help your unique business. </strong>We have decades of combined experience and expertise strategizing ways to accelerate the growth of manufacturing companies like yours. So we’re perfectly positioned to nurture both your workforce and your legacy.</p>
+				</div>
+				
+				<div class="story-block-link">
+					<a class="btn btn-primary" href="#">Learn More</a>
+				</div>
+
+			</div>
+		</div>
+    </section>
+	<!-- End: Story Block CENTER TEXT Full Bg Img -->
+
+
+
+    <!-- Start: Story Block LEFT TEXT, Right Img -->
+    <section id="story4" class="section section-story-block">
+	    <div class="story-block left-text-right-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner" >
+				<div class="group-left">
+					<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=4" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+				</div>
+				<div class="group-right">
+					<div class="story-block-images">
+						<figure>
+							<img src="https://picsum.photos/800/600?random=4" alt="CHANGEME" typeof="foaf:Image">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+    <!-- End: Story Block LEFT TEXT, Right Img -->
+    
+    
+    
+    <!-- Start: Story Block RIGHT TEXT, left Img -->
+    <section id="story5" class="section section-story-block">
+	    <div class="story-block right-text-left-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner" >
+				<div class="group-left">
+					<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=5" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					<div class="story-block-images">
+						<figure>
+							<img src="https://picsum.photos/800/600?random=5" alt="CHANGEME" typeof="foaf:Image">
+						</figure>
+					</div>
+				</div>
+				<div class="group-right">
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	<!-- End: Story Block RIGHT TEXT, left Img -->
+
+
+
+    <!-- Start: Story Block RIGHT TEXT, left BG img -->
+    <section id="story6" class="section section-story-block">
+	    <div class="story-block right-text-left-bg-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner">
+				<div class="group-left" style="background-image: url(https://unsplash.it/1000/650?random=6);">
+					<div class="story-block-mobile-image">
+						<img src="https://picsum.photos/800/600?random=6" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					<div class="story-block-images"></div>
+				</div>
+				<div class="group-right">
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	<!-- End: Story Block RIGHT TEXT, left BG img -->
+	
+	
+	
+    <!-- Start: Story Block LEFT TEXT, right BG img -->
+    <section id="story7" class="section section-story-block">
+	    <div class="story-block left-text-right-bg-image clearfix">
+			<div class="image-overlay"></div>
+			<div class="story-block-inner">
+				<div class="group-left">
+					<div class="story-block-mobile-image">
+						<img src="https://unsplash.it/800/600?random=7" alt="CHANGEME" typeof="foaf:Image">
+					</div>
+					<h2 class="title">This Is A Title To Be Replaced</h2>
+					<div class="story-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus mauris ultrices eros in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Porttitor eget dolor morbi non arcu risus. Quisque egestas diam in arcu cursus euismod. Turpis egestas maecenas pharetra convallis posuere morbi leo. </p>
+					</div>
+					<div class="story-block-link">
+						<a class="btn btn-primary" href="#">Learn More</a>
+					</div>
+				</div>
+				<div class="group-right" style="background-image: url(https://unsplash.it/1000/650?random=7);">
+					<div class="story-block-images"></div>
+				</div>
+			</div>
+		</div>
+    </section>
+	<!-- End: Story Block RIGHT TEXT, left BG img -->
+
+    
+    
+    
+    <!-- Start: Instagram feed -->
+    <section id="instagram" class="section section-instagram">
+	    <div class="section-inner">
+	        <h2 class="text-center section-title">Instagram Feed</h2>
+	        <h4 class="text-center">Follow <a href="https://www.instagram.com/hossburgers/" target="_blank">@hossburgers</a> On Instagram</h2>
+			<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/fe9f312d8f315f1f8b0e697e7c43d137.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+		</div>
+    </section>
+    <!-- End: Instagram feed -->
+    
+    
+    
+    <!-- Start: Contact Form -->
+    <section id="contact" class="section section-contact">
         <div class="container">
             <h2 class="text-center section-title">Contact Us</h2>
-            <p class="text-center">[Name of Business]<br>[street address]<br>[state, zip]<br>[phone number]<br>[email address]</p>
-<!-- WUFOO FORM DROP IN -->
+            <p class="text-center"><$site-name><br><$address1><br><$address2><br><$city>, <$state> <$zip><br><$phone><br><$fax><br><$email></p>
+            
+            <!-- contact form -->
+            <!-- WUFOO FORM DROP IN -->
+	
+			<div id="wufoo-z1412haw045qqh0"> Fill out my <a href="https://digidreamz.wufoo.com/forms/z1412haw045qqh0">online form</a>. </div> <script type="text/javascript"> var z1412haw045qqh0; (function(d, t) { var s = d.createElement(t), options = { 'userName':'digidreamz', 'formHash':'z1412haw045qqh0', 'autoResize':true, 'height':'597', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1412haw045qqh0 = new WufooForm(); z1412haw045qqh0.initialize(options); z1412haw045qqh0.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+			<!-- END WUFOO FORM -->
 
-<div id="wufoo-z1412haw045qqh0"> Fill out my <a href="https://digidreamz.wufoo.com/forms/z1412haw045qqh0">online form</a>. </div> <script type="text/javascript"> var z1412haw045qqh0; (function(d, t) { var s = d.createElement(t), options = { 'userName':'digidreamz', 'formHash':'z1412haw045qqh0', 'autoResize':true, 'height':'597', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1412haw045qqh0 = new WufooForm(); z1412haw045qqh0.initialize(options); z1412haw045qqh0.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
-
-
-<!-- END WUFOO FORM -->
         </div>
     </section>
-    <div class="social-icons"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-youtube"></i></a></div><iframe allowfullscreen=""
-        frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%" height="400"></iframe>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 item text">
-                        <div class="footer-logo"><img src="assets/img/s&s_logo.svg"></div>
-                        <h3 class="footer-company-name">Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <p>441 Nashville Pike<br>Gallatin, TN 37066<br>Phone: 615.452.4363<br>Fax: 615.451.1465<br>Email: info@bakermotors.com</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+    <!-- End: Contact Form -->
+    
+    
+    
+    <!-- Start: Social Links -->
+    <section id="social-links" class="section section-social-links">
+	    <h2 class="text-center section-title">Follow Us</h2>
+	    <div class="social-icons">
+		    <a href="#"><i class="icon ion-social-twitter"></i></a>
+		    <a href="#"><i class="icon ion-social-facebook"></i></a>
+		    <a href="#"><i class="icon ion-social-linkedin"></i></a>
+		    <a href="#"><i class="icon ion-social-youtube"></i></a>
+		</div> 
+    </section>
+    <!-- End: Social Icons -->
+    
+    
+    
+    <!-- Start: Newsletter Subscription -->
+    <section id="subscribe" class="section section-subscribe">
+	    <div class="newsletter-subscribe">
+	        <div class="container">
+	            <!-- Start: Intro -->
+	            <div class="intro">
+	                <h2 class="text-center section-title">Sign Up for Updates</h2>
+	                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+	            </div>
+	            <!-- End: Intro -->
+	            <form class="form-inline" method="post">
+	                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+	                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+	            </form>
+	        </div>
+	    </div>
+    </section>
+    <!-- End: Newsletter Subscription-->
+    
+    
+    
+    <!-- Start: Map / Location -->
+    <section id="location" class="section section-map" href="#location">
+	    <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA03k0kGoNq2Jfh4m_MnGT3LMgOY2RTWmU&amp;q=Baker+Motors+441+Nashville+Pike+Gallatin%2C+TN+37066&amp;zoom=15"></iframe>
+	</section>
+	<!-- End: Map / Location -->
+	
+    
+    
+    <!-- Start: Footer -->
+    <footer id="footer" class="section section-footer footer-dark">
+	    <a class="back-to-top" href="#top"><i class="fas fa-chevron-up"></i><span class="d-none">Top</span></a>
+        <div class="container">
+            <div class="row">
+	            
+                <!-- Start: Footer Text -->
+                <div class="col-md-6 item branding">
+                    <div class="footer-logo"><img src="img/s&s_logo.svg"></div>
+                    <h3 class="footer-company-name">Company Name</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
                 </div>
-                <p class="copyright">© 2020&nbsp;Company Name&nbsp;</p>
+                <!-- End: Footer Text -->
+                
+                <!-- Start: About -->
+                <div class="col-sm-6 col-md-3 item contact-info">
+                    <p>441 Nashville Pike<br>Gallatin, TN 37066<br>
+                        Phone: 615.452.4363<br>
+                        Fax: 615.451.1465<br>
+                        Email: info@bakermotors.com</p>
+                </div>
+                <!-- End: About -->
+                
+                <!-- Start: Social Icons -->
+                <div class="col item social">
+                    <a href="#"><i class="icon ion-social-facebook"></i></a>
+                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                    <a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                <!-- End: Social Icons -->
             </div>
-        </footer>
-    </div>
-    <footer></footer>
+            
+            <!-- Start: Copyright -->
+            <div class="copyright"><span>&copy; 2020 [client name].</span> <a href="/privacy">Privacy Policy</a></div>
+            <!-- End: Copyright -->
+        </div>
+    </footer>
+	<!-- End: Footer -->
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="js/Simple-Slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js" integrity="sha256-CfyPGYLRQ4v1O+mZa5ocQglABXGuaZmmfe8awy8Fxis=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
