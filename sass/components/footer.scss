@@ -1,0 +1,186 @@
+//----------------------------------
+//
+//	FOOTER
+//
+//----------------------------------
+
+
+.section-footer {
+	padding: 5vw 0;
+		
+	// Back to Top button
+	a.back-to-top {
+	    position: absolute;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    top: -30px;
+	    display: block;
+	    width: 72px;
+	    height: 72px;
+	    background-color: $back-to-top-bg-color;
+	    color: $back-to-top-icon-color;
+	    text-align: center;
+	    border-radius: 100%;
+		font-size: 30px;
+		padding-top: 10px;
+		display: block;
+		
+		&:hover {
+			background-color: lighten($back-to-top-bg-color, 15%);
+		}
+	}
+	
+	.footer-logo {
+		margin-bottom: 20px;
+	}
+	
+	.footer-company-name {
+		display: none;
+	}
+	
+	h3 {
+		margin-top: 0;
+		margin-bottom: 12px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	
+	ul {
+		padding: 0;
+		list-style: none;
+		line-height: 1.6;
+		font-size: 14px;
+		margin-bottom: 0;
+		
+		a {
+			color: inherit;
+			text-decoration: none;
+			opacity: 0.6;
+			
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	
+	@media (max-width:767px) {
+		.item:not(.social) {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
+	
+	.item {
+		
+		&.text {
+			margin-bottom: 36px;
+			
+			@media (max-width:767px) {
+				margin-bottom: 0;
+			}
+			
+			p {
+				opacity: 0.6;
+				margin-bottom: 0;
+			}
+		}
+		
+		&.branding {
+			font-size: 16px;
+		}
+		
+		&.contact-info {
+			font-size: 16px;
+		}
+		
+		&.social {
+			text-align: center;
+			
+			@media (max-width:991px) {
+				text-align: center;
+				margin-top: 20px;
+			}
+			
+			> a {
+				font-size: 20px;
+				width: 36px;
+				height: 36px;
+				line-height: 36px;
+				display: inline-block;
+				text-align: center;
+				border-radius: 50%;
+				box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+				margin: 0 8px;
+				color: #fff;
+				opacity: 0.75;
+				
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+	
+	// copyright 
+	.copyright {
+		text-align: center;
+		padding-top: 24px;
+		font-size: 15px;
+		margin-bottom: 0;
+		color: $footer-dark-text-color;
+		
+		a {
+			color: $footer-dark-link-color;
+			
+			&:hover {
+				color: $footer-dark-link-hover-color;
+			}
+		}
+	}
+}
+
+// Footer Dark
+.footer-dark {
+	color: $footer-dark-text-color;
+	background-color: $footer-dark-bg-color;
+	
+	h3 {
+		color: $footer-dark-title-color;
+	}
+	
+	a {
+		color: $footer-dark-link-color;
+		
+		&:hover {
+			color: $footer-dark-link-hover-color;
+		}
+	}	
+}
+
+// Footer Light
+.footer-light {
+	color: $footer-light-text-color;
+	background-color: $footer-light-bg-color;
+	
+	h3 {
+		color: $footer-light-title-color;
+	}
+	
+	a {
+		color: $footer-light-link-color;
+		
+		&:hover {
+			color: $footer-light-link-hover-color;
+		}
+	}
+}
+
+
+
+
+
+
+

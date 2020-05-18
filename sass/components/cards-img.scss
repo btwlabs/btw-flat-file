@@ -1,0 +1,37 @@
+.section-services {
+	
+	.container-fluid {
+		padding: 0 5vw;
+	}
+	
+	.item {
+	    margin-bottom: 30px;
+	}
+	
+	// Cards
+	.card {
+    	align-items: center;
+    	padding: 2vw;
+    	background-color: transparent;
+    	border: 0;
+    }
+	
+	// image
+	.card-image {
+		margin-bottom: 30px;
+	}
+	
+	// body: title, text, link
+	.card-body {
+		padding: 0; // bs override
+		
+		.card-title {
+			//text-align: center;
+		}
+		.card-text {
+			margin-bottom: 2rem;
+			font-size: .9em;
+		}
+	}
+
+}

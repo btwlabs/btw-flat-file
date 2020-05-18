@@ -1,1 +1,7 @@
 *.idea
+*.scssc
+*.sassc
+.sass-cache
+node_modules
+.DS_Store
+/node_modules

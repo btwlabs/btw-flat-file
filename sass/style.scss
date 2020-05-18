@@ -1,0 +1,594 @@
+//------------------------------------
+//------------------------------------
+//
+//	STYLES 
+//
+//------------------------------------
+//------------------------------------
+
+
+
+
+//----------------------------------
+//
+//	GENERAL ELEMENTS
+//
+//----------------------------------
+
+/*html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}*/
+
+body {
+	padding-top: 80px;
+	font-family: 'Open Sans', Helvetica, Arial, sans;
+	font-size: 20px;
+	background-color: $body-bg;
+	color: $body-color;
+	line-height: 1.6;
+}
+
+.section {
+	padding: 8vw 0;
+	position: relative;
+}
+
+h2.section-title {
+	margin: 0px 0 40px 0;
+	font-weight: bold;
+}
+
+a {
+	transition: all 0.2s ease-in;
+}
+
+img, media {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle; /* kills space between img, a, and container */
+}
+
+
+.dark {
+	h2.section-title {
+		color: $title-on-dark-color;
+	}
+	color: $text-on-dark-color;
+	
+}
+
+
+//--------------------
+//	BUTTONS
+//--------------------
+
+.button-wrapper {
+	margin: 40px 0;
+}
+
+.btn {
+	padding: 15px 30px !important;
+}
+
+.btn-primary {
+	background-color: $primary;
+	border-color: $primary;
+  
+  &:hover {
+	  background-color: #fff;
+	  border-color: $primary;
+	  color: $primary !important;
+	}
+}
+
+
+
+
+//----------------------------------
+//
+//	SECTION: NAVIGATION
+//
+//----------------------------------
+
+.navbar {
+	height: 80px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+	width: 100px;
+	
+	img {
+		max-width: 100%;
+		height: auto !important;
+		width: 100px;
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: HERO
+//
+//----------------------------------
+
+.section-hero {
+	    height: 100vh;
+	    
+	.jumbotron {
+		//background-image: $hero-background-image;
+		min-height: 50vw;
+		color: rgb(255,255,255);
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		padding: 0;
+		height: 100vh;
+		
+		@media (min-width: 300px) and (max-width: 800) {
+			padding: 20px;
+		}
+		
+		@include media-breakpoint-up(sm) {
+			height: calc(100vh - 112px);
+		}
+	}
+	
+	.parallax-item {
+		position: absolute !important;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	
+	// Overlay
+	.hero-overlay {
+		width: 100%;
+		height: 100vh;
+		background: $hero-overlay-color;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+	}
+	
+	// content wrapper
+	.jumbotron-content-wrapper {
+		z-index: 2;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	
+	// Logo
+	.hero-logo-wrapper {
+		max-width: 600px;
+		margin-bottom: 30px;
+		min-width: 320px;
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	// title, subtitle, link
+	.hero-title-wrapper {
+		margin: 0px 0px 4em;
+		
+		.hero-heading {
+			margin-bottom: 20px;
+		}
+		.hero-subheading {
+			
+		}
+		
+		p {
+			margin-bottom: 40px;
+		}
+	}
+	
+	// Contact info
+	.hero-contact-wrapper {
+		@media (min-width: 300px) {
+			flex-direction: column;
+			align-items: center;
+		}
+			
+		@media (min-width: 576px) {
+			flex-direction: row;
+		}
+		
+		.hero-address, 
+		.hero-contact {
+			width: 270px;
+			display: inline-block;
+			vertical-align: top;
+			height: 110px;
+			font-size: 15px;
+			text-align: left;
+			min-width: 270px;
+			margin: 0 20px 20px;
+			border: 1px solid #ccc;
+		}
+		
+		// icon
+		.contact-icon {
+			width: 60px;
+			border-right: 1px solid $border-color;
+			display: inline-block;
+			vertical-align: middle;
+			height: 108px;
+			position: relative;
+			flex: 0 0 50px;
+		}
+		
+		// info
+		.details {
+			flex: 1 1 auto;
+			display: flex;
+			align-items: center;
+			padding-left: 20px;
+			
+			a {
+				color: #fff;
+			}
+			
+			p {
+				margin: 0;
+			}
+		}
+	}
+	
+	.scroll-link {
+		z-index: 2;
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		a {
+			font-size: 30px;
+		}
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: ALERT
+//
+//----------------------------------
+
+.section-alert {
+    padding: 3vw 5vw;
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: ABOUT
+//
+//----------------------------------
+
+.section-about {
+	text-align: center;
+	
+	.intro {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+//----------------------------------
+//
+//	SECTION: SERVICES (cards with img)
+//
+//----------------------------------
+
+.section-services {
+	background-color: $section-services-bg-color;
+}
+
+// NOTE: more styles in /components/cards-img.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: FEATURES (cards with icon)
+//
+//----------------------------------
+
+.section-features {
+	background-color: $section-features-bg-color;
+}
+
+// NOTE: more styles in /components/cards-img.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: INSTAGRAM
+//
+//----------------------------------
+
+.section-instagram {
+    background-color: $section-alternating-bg;
+    padding-bottom: 0;
+    
+    .section-inner {
+	    //max-width: 84vw;
+		margin: 0 auto;
+    }
+    
+    li.lightwidget__tile {
+	    padding: 20px !important;
+	}
+	
+	h4 {
+		margin-bottom: 40px;
+		font-size: 1.2rem;
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: TWITTER embed
+//
+//----------------------------------
+
+.section-twitter {
+	background-color: $section-twitter-bg-color;
+	
+	.feed-wrapper {
+		max-width: $twitter-feed-max-width;
+		margin: 0 auto;
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: FACEBOOK embed
+//
+//----------------------------------
+
+.section-facebook {
+	background-color: $section-fb-bg-color;
+	
+	.feed-wrapper {
+		max-width: $fb-feed-max-width;
+	    margin: 0 auto;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+}
+
+
+//----------------------------------
+//
+//	SECTION: TOUR (Bands In Town embed)
+//
+//----------------------------------
+
+.section-bands-in-town {
+	background-color: $section-bit-bg-color;
+	
+	.feed-wrapper {
+		max-width: $bit-feed-max-width;
+	    margin: 0 auto;
+	    padding: 0 5px; // to total 15px with iframe. to match bootstrap defaults
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: IMAGE PARALLAX
+//
+//----------------------------------
+
+.section-parallax-img {
+	padding: 0;
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: SLIDES images only
+//
+//----------------------------------
+
+.section-slides {
+	background-color: $section-slides-bg-color;
+	padding: 80px 0 0;
+}
+
+// NOTE: more styles in /components/simple-slider.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: SLIDES with TEXT
+//
+//----------------------------------
+
+.section-slides-text {
+	.swiper-slide {
+		position: relative;
+		padding: 50px 90px;
+	}
+	.overlay {
+		position: absolute;
+		background: rgba(0,0,0,0.4);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	.slide-content {
+	    max-width: 1000px;
+	    color: #fff;
+	    z-index: 1;
+	    transform: translate(-50%,-50%);
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    padding: 4vw;
+	    text-align: center;
+	}
+}
+
+
+
+
+//----------------------------------
+//
+//	SECTION: STORY BLOCKS
+//
+//----------------------------------
+
+#story5 {
+	background-color: $section-alternating-bg;
+}
+
+// NOTE: general styles in /components/story-blocks.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: CONTACT
+//
+//----------------------------------
+
+.section-contact {
+	background-color: $section-contact-bg-color;
+}
+
+// NOTE: more styles in /components/contact.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: SOCIAL LINKS - ICONS
+//
+//----------------------------------
+
+.section-social-links {
+	background-color: $section-social-links-bg-color;
+	padding: 5vw 0;
+	
+	@media (max-width:767px) {
+		padding: 50px 0;
+	}
+}
+
+.social-icons {
+	text-align: center;
+	
+	a {
+		display: inline-block;
+		
+		&:hover {
+			i {
+				color: lighten($social-icon-color, 15%);
+				border-color: lighten($social-icon-border-color, 15%);
+			}
+		}
+	}
+	
+	i {
+		font-size: 32px;
+		display: inline-block;
+		color: $social-icon-color;
+		margin: 0 10px;
+		width: 60px;
+		height: 60px;
+		border: 1px solid $social-icon-border-color;
+		text-align: center;
+		border-radius: 50%;
+		line-height: 60px;
+		transition: all, 0.2s, ease-in;
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: SUBSCRIBE
+//
+//----------------------------------
+
+.section-subscribe {
+	background-color: $section-subscribe-bg-color;
+}
+
+// NOTE: more styles in /components/subscribe.scss
+
+
+
+//----------------------------------
+//
+//	SECTION: MAP / LOCATION
+//
+//----------------------------------
+
+.section-map {
+	background-color: $section-map-bg-color;
+	padding: 0;
+	
+	iframe {
+		width: 100%;
+		height: $map-height;
+	}
+}
+
+
+
+//----------------------------------
+//
+//	SECTION: FOOTER
+//
+//----------------------------------
+
+// NOTE: more styles in /components/footer.scss
+
+
